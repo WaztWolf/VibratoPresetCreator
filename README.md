@@ -1,52 +1,17 @@
+
 # Vibrato Preset Creator
 
-Vibrato Preset Creator es una aplicación de escritorio construida con Avalonia UI y .NET 8.0 para crear, editar y guardar presets de vibrato en archivos `.cs` y manipular archivos de audio WAV.
+## ¿Cómo funciona la interfaz?
 
-## Características principales
-- Selección y visualización de archivos WAV.
-- Edición y guardado de presets en archivos `.cs`.
-- Configuración de dispositivo de salida de audio.
-- Interfaz moderna y fácil de usar.
+La interfaz de Vibrato Preset Creator está diseñada para ser intuitiva y fácil de usar. Al abrir la aplicación verás varias secciones principales:
 
-## Requisitos
-- .NET 8.0 SDK
-- Windows 10/11 (compatible con otras plataformas si Avalonia lo permite)
+- **Configuración**: Aquí puedes seleccionar el archivo WAV que quieres usar, elegir el dispositivo de salida de audio y gestionar el archivo de presets `.cs`.
+   - El botón "Examinar…" te permite buscar y seleccionar un archivo WAV desde tu equipo.
+   - El combo de dispositivos muestra las opciones de salida de audio disponibles.
+   - Puedes elegir o guardar el archivo de presets `.cs` usando los botones correspondientes.
 
-## Instalación
-1. Clona este repositorio:
-   ```powershell
-   git clone <URL-del-repositorio>
-   ```
-2. Accede al directorio del proyecto:
-   ```powershell
-   cd VibratoPresetCreator
-   ```
-3. Restaura los paquetes y compila:
-   ```powershell
-   dotnet restore
-   dotnet build
-   ```
+- **Guardar Preset**: Permite guardar los cambios realizados en los presets directamente en el archivo `.cs` seleccionado.
 
-## Ejecución
-Para iniciar la aplicación:
-```powershell
- dotnet run
-```
+- **Probar audio**: Puedes seleccionar un preset y reproducir el audio para escuchar cómo suena con los parámetros configurados.
 
-## Uso
-1. Selecciona un archivo WAV usando el botón "Examinar…".
-2. Elige el dispositivo de salida de audio.
-3. Selecciona o crea un archivo de presets `.cs`.
-4. Guarda los cambios usando los botones correspondientes.
-
-## Estructura del proyecto
-- `Views/` - Contiene las ventanas y controles visuales (AXAML y CS).
-- `Models/` - Modelos de datos para presets y notas.
-- `Services/` - Lógica de negocio y servicios de audio, configuración y generación de código.
-- `App.axaml` y `Program.cs` - Entrada principal de la aplicación.
-
-## Contribuir
-Las contribuciones son bienvenidas. Puedes abrir issues o enviar pull requests.
-
-## Licencia
-Este proyecto está bajo la licencia MIT.
+La aplicación está pensada para facilitar la edición y prueba de presets de vibrato de manera visual y rápida, sin necesidad de editar archivos manualmente.
